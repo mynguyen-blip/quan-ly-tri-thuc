@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #136dec;
+  --color-primary-light: #e8f0fe;
+  --color-background-light: #f8f9fa;
+  --color-background-dark: #101822;
+
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  body {
+    @apply font-body bg-background-light text-[#111418] dark:bg-background-dark dark:text-white overflow-x-hidden antialiased;
+    font-size: 16px;
+  }
+}
